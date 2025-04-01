@@ -1,0 +1,40 @@
+/* Configuração geral */ html, body { height: 100%; min-height: 100vh; margin: 0; padding: 0; text-align: center; color: white; font-family: Arial, sans-serif; }
+
+/* Fundo desfocado */ body::before { content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-image: url('fundo.png'); background-size: cover; background-position: center; background-repeat: no-repeat; filter: blur(10px); z-index: -1; }
+
+/* Container responsivo */ .container { max-width: 90%; width: 800px; margin: auto; padding: 20px; position: relative; z-index: 1; }
+
+/* Logo responsiva */ .logo { width: 50%; max-width: 200px; height: auto; }
+
+/* Botões */ .btn { display: inline-block; background-color: red; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px; font-size: 1em; }
+
+/* Cartões */ .vip-card, .car-card { background-color: rgba(51, 51, 51, 0.8); padding: 15px; border-radius: 10px; margin: 10px 0; text-align: center; }
+
+.vip-card img, .car-card img { width: 80px; height: 80px; border-radius: 10px; }
+
+/* Links */ .link { color: #00a8ff; text-decoration: none; }
+
+.link:hover { text-decoration: underline; }
+
+/* Estilos para links do Discord e WhatsApp */ .discord-link { color: #5865F2; }
+
+.whatsapp-link { color: #25D366; }
+
+/* Ajustes para telas menores */ @media (max-width: 768px) { .container { width: 95%; }
+
+.logo {
+    width: 70%;
+}
+
+.vip-card img, .car-card img {
+    width: 70px;
+    height: 70px;
+}
+
+.btn {
+    padding: 8px 15px;
+    font-size: 0.9em;
+}
+
+}
+
